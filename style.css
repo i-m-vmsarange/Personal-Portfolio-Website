@@ -74,3 +74,78 @@ nav ul li a:hover::after{
 span{
     color: #ff004f;
 }
+#about{
+    padding: 80px 0;
+    background-color: #080808;
+}
+#about .row{
+
+    display: flex;
+    justify-content: space-between;
+    color: #ababab;
+}
+.row .about-col-1{
+
+    flex-basis: 35%;
+}
+.row .about-col-2{
+
+    flex-basis:60%;
+}
+#about img{
+
+    width: 100%;
+    border-radius: 15px;
+}
+.subtitle{
+
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+
+    content: '';
+    height: 3px;
+    background-color: #ff004f;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+    position: absolute;
+
+}
+.tab-links:hover::after{
+
+    width: 100%;
+}
+.tab-contents ul li{
+
+    list-style-type: none;
+}
+.tab-contents ul li span{
+
+    font-size: 14px;
+    color: #b54769;
+}
+.tab-contents{
+
+    display: none;
+}
+.tab-contents.active-tab{
+
+    display: block;
+}
